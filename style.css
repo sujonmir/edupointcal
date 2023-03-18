@@ -260,9 +260,10 @@ body {
 }
 
 /*quiz global style start*/
-#quizes{
+#quizes {
     display: none;
 }
+
 .quiz {
     background: #fff;
     margin-top: 50px;
@@ -346,6 +347,7 @@ body {
 
 /*responsive style start*/
 @media only screen and (max-width: 600px) {
+
     .headingSection {
         background-image: none;
         background: var(--bg);
@@ -391,6 +393,10 @@ body {
 
     .inTittle {
         display: none !important;
+    }
+
+    .sec .wrapper {
+        padding: 50px 10px;
     }
 
     .sec .wrapper .inputWrapper {
