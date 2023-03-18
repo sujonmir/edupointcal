@@ -30,8 +30,8 @@ body {
     display: flex;
     padding: 50px;
     border-radius: 10px;
-    background: var(--bg);
-    background: linear-gradient(90deg, rgba(12, 4, 94, 1) 0%, rgba(253, 29, 29, 0) 50%, rgba(252, 176, 69, 0) 100%);
+    /*background: var(--bg);*/
+    /*background: linear-gradient(90deg, rgba(12, 4, 94, 1) 0%, rgba(253, 29, 29, 0) 50%, rgba(252, 176, 69, 0) 100%);*/
 }
 
 .headingSection .leftPart {
