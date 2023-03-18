@@ -1,0 +1,464 @@
+:root {
+    --bg: rgb(12, 4, 94);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+/*heading section start*/
+.headingSection {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    background: #ddd;
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.headingSection .wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+    border-radius: 10px;
+    background: var(--bg);
+    background: linear-gradient(90deg, rgba(12, 4, 94, 1) 0%, rgba(253, 29, 29, 0) 50%, rgba(252, 176, 69, 0) 100%);
+}
+
+.headingSection .leftPart {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+.headingSection .wrapper .leftPart h1 {
+    font-size: 48px;
+}
+
+.headingSection .wrapper .rightPart {
+    flex-basis: 60%;
+}
+
+.headingSection .wrapper .rightPart h1 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.headingSection .wrapper .rightPart p {}
+
+.headingSection .wrapper .rightPart p ul {}
+
+.headingSection .wrapper .rightPart p ul li {}
+
+.headingSection .wrapper .rightPart .footer {
+    font-size: 14px;
+}
+
+/*heading section end*/
+
+/*sec global style start*/
+.sec {
+    margin: 50px auto;
+    width: 90%;
+    background: var(--bg);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.sec .wrapper {
+    padding: 50px;
+    width: 100%;
+
+}
+
+.sec .wrapper .title {
+    font-size: 32px;
+}
+
+.sec .wrapper .inputWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec .wrapper .inputWrapper div {
+    padding: 10px 0;
+}
+
+.sec .wrapper .inputWrapper div:nth-child(1) {}
+
+.inputPoints {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inputPoints .point {
+    background: rgba(255, 255, 255, .4);
+    text-align: center;
+    flex-basis: 50% !important;
+    padding: 5px;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.yesnoWrap {
+    margin-left: 100px;
+}
+
+.yesnoWrap div {
+    margin-right: 150px;
+    font-size: 32px;
+}
+
+/*sec global style end*/
+
+/*sec 1 start*/
+.sec1 {}
+
+.sec1 .wrapper {}
+
+.sec1 .wrapper .title {}
+
+.sec1 .wrapper .inputWrapper {}
+
+.sec1 .wrapper .inputWrapper div {
+    flex-basis: 25%;
+}
+
+.sec1 .wrapper .inputWrapper div:nth-child(1) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sec1 .wrapper .inputWrapper div:nth-child(3) input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.sec1 .wrapper .inputWrapper div:nth-child(4) {
+    text-align: right;
+}
+
+.sec1 .lowerText {
+    text-align: right;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+/*sec 1 end*/
+
+/*sec 2 start*/
+.sec2 {}
+
+.sec2 .wrapper {}
+
+.sec2 .wrapper .title {}
+
+.sec2 .wrapper .inputWrapper {}
+
+.sec2 .wrapper .inputWrapper div {
+    flex-basis: 33%;
+
+}
+
+.sec2 .wrapper .inputWrapper div:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sec2 .wrapper .inputWrapper div:nth-child(1) select {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+
+}
+
+.sec2 .wrapper .inputWrapper div:nth-child(2) input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.sec2 .wrapper .inputWrapper div:nth-child(3) {
+    text-align: right;
+}
+
+
+/*sec 2 end*/
+
+/*sec 3 start*/
+
+.sec3 .wrapper .inputWrapper div {
+    flex-basis: 50%;
+}
+
+.sec3 .wrapper .inputWrapper div:nth-child(2) {
+    text-align: right;
+}
+
+
+
+/*sec 3 end*/
+
+/*sec 4 start*/
+
+.sec4 .wrapper .inputWrapper div {
+    flex-basis: 50%;
+}
+
+.sec4 .wrapper .inputWrapper div:nth-child(2) {
+    text-align: right;
+}
+
+/*sec 4 end*/
+
+/*sec 5 start*/
+.sec5 {
+    background: #dddddd70;
+    color: #222;
+}
+
+.sec5 .conDescription {
+    font-size: 16px;
+}
+
+.sec5 .wrapper .inputWrapper div {
+    flex-basis: 50%;
+}
+
+.sec5 .wrapper .inputWrapper div:nth-child(2) {
+    text-align: right;
+}
+
+.sec5 .inputPoints .point {
+    background: #00000050;
+    color: #fff;
+}
+
+.sec5 .note {
+    text-align: right;
+    margin-top: 30px;
+    color: grey;
+    font-size: 14px;
+}
+
+/*quiz global style start*/
+#quizes{
+    display: none;
+}
+.quiz {
+    background: #fff;
+    margin-top: 50px;
+    padding: 50px;
+    border-top: 3px solid #ccc;
+}
+
+.quiz .question {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.quiz .answerWrap {}
+
+.quiz .answerWrap .form-check {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*quiz global style end*/
+
+/*sec 5 end*/
+
+/*resultSec start*/
+.resultSec {
+    width: 90%;
+    background: #fff;
+    margin: auto;
+    display: flex;
+    padding: 20px 50px 50px 50px;
+    font-size: 48px;
+    color: var(--bg);
+    border-top: 3px solid var(--bg);
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0px 0px 50px #11111140;
+}
+
+.resultSec .leftPart {
+    flex-basis: 70%;
+}
+
+.resultSec .leftPart .resTitle {}
+
+.resultSec .leftPart .resdes {
+    font-size: 16px;
+}
+
+.resultSec .rightPart {
+    flex-basis: 30%;
+    text-align: right;
+    margin-right: 50px;
+    position: relative;
+}
+
+.resultSec .rightPart .totalPointes {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*resultSec end*/
+.bannerimg {
+    display: none;
+}
+
+/*responsive style start*/
+@media only screen and (max-width: 600px) {
+    .headingSection {
+        background-image: none;
+        background: var(--bg);
+    }
+
+    .headingSection .wrapper {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .headingSection .bannerimg {
+        display: block;
+    }
+
+    .headingSection .bannerimg img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .headingSection .wrapper .leftPart h1 {
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+
+    .headingSection .wrapper .rightPart h1 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .headingSection .wrapper .rightPart .footer {
+        font-size: 14px;
+    }
+
+    .sec .wrapper .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .inTittle {
+        display: none !important;
+    }
+
+    .sec .wrapper .inputWrapper {
+        flex-direction: column;
+    }
+
+    .inputPoints .point {
+        padding: 10px 40px !important;
+    }
+
+    .sec1 .lowerText {
+        text-align: center;
+    }
+
+    .sec2 .wrapper .inputWrapper div:nth-child(1) select {
+        width: 100%;
+    }
+
+    .sec5 .conDescription {
+        text-align: center;
+    }
+
+    .sec5 .note {
+        text-align: center;
+    }
+
+    .quiz {
+        padding: 20px;
+    }
+
+    .quiz .question {
+        font-size: 16px;
+    }
+
+    .quiz .answerWrap .form-check {
+        font-size: 16px;
+    }
+
+    .resultSec {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .resultSec .leftPart .resTitle {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .resultSec .leftPart .resdes {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .resultSec .rightPart .totalPointes {
+        height: 100% !important;
+        width: 100% !important;
+        padding: 10px;
+        display: block;
+        background: var(--bg);
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .resultSec .rightPart {
+        margin-right: 0;
+    }
+}
+
+/*responsive style end*/

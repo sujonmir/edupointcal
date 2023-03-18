@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3c6e13747.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>kalkulator punktów</title>
+</head>
+
+<body>
+    <!-- heading section start -->
+    <section class="headingSection">
+        <div class="bannerimg">
+            <img src="img/banner.jpg" alt="">
+        </div>
+        <div class="wrapper">
+            <div class="leftPart">
+                <h1>Points Calculator</h1>
+            </div>
+            <div class="rightPart">
+                <h1>Check the approximate number of points you can get during recruitment to high school.</h1>
+                <p>
+                    To calculate the approximate number of points you will need:
+                    <ul>
+                        <li>eighth grade exam results,</li>
+                        <li>grade in selected subjects from the 8th grade graduation certificate*,</li>
+                        <li>information about additional activities (e.g. volunteering).</li>
+                    </ul>
+                </p>
+                <p class="footer">
+                    <small><u>* The principal of the school decides</u> which subjects from the certificate (except Polish and mathematics) are scored in a given secondary school .</small>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- heading section end -->
+    <!-- Eighth-grader exam section start -->
+    <section class="sec sec1">
+        <div class="wrapper">
+            <h1 class="title">
+                Eighth-grader exam
+            </h1>
+            <hr>
+            <div class="inputWrapper inTittle">
+                <div></div>
+                <div></div>
+                <div>Result [%] or grade*</div>
+                <div>points</div>
+            </div>
+            <div class="inputWrapper">
+                <div class="inputTitle">
+                    <p>Polish</p>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switch1">
+                    <label class="form-check-label" for="switch1">exempt** from the exam</label>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="results %" id="EighthPointPolishInput">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="EighthPointPolish">0</div>
+                </div>
+            </div>
+            <div class="inputWrapper">
+                <div class="inputTitle">
+                    <p>mathematics</p>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switch2">
+                    <label class="form-check-label" for="switch2">exempt** from the exam</label>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="results %" id="EighthPointMathInput">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="EighthPointMath">0</div>
+                </div>
+            </div>
+            <div class="inputWrapper">
+                <div class="inputTitle">
+                    <p>j. modern foreign</p>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switch3">
+                    <label class="form-check-label" for="switch3">exempt** from the exam</label>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="results %" id="EighthPointForeignInput">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="EighthPointForeign">0</div>
+                </div>
+            </div>
+            <p class="lowerText">*Result [%] or if exempted from the exam - grade from the certificate <br><br>
+                **The calculator provides for standard situations, i.e. exemption from the exam for achievements; Exemption from the exam due to certificates issued to the student is an individual situation and should be considered separately</p>
+        </div>
+    </section>
+    <!-- Eighth-grader exam section end -->
+    <!-- Primary school leaving certificate start -->
+    <section class="sec sec2">
+        <div class="wrapper">
+            <h1 class="title">
+                Primary school leaving certificate
+            </h1>
+            <hr>
+            <div class="inputWrapper inTittle">
+                <div></div>
+                <div>Rating</div>
+                <div>Points</div>
+            </div>
+            <div class="inputWrapper">
+                <div class="inputTitle">
+                    <p>Polish</p>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="Enter Rating" id="primaryPointPolishInput">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="primaryPointPolish">0</div>
+                </div>
+            </div>
+            <div class="inputWrapper">
+                <div class="inputTitle">
+                    <p>mathematics</p>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="Enter Rating" id="primaryPointMathInput">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="primaryPointMath">0</div>
+                </div>
+            </div>
+            <div class="inputWrapper">
+                <div class="selection">
+                    <select name="" id="primarySub3">
+                        <option value="choose" disabled selected>Choose a subject</option>
+                        <option value="history">History</option>
+                        <option value="civics">Civics</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="physics">Physics</option>
+                        <option value="it">Information Technology</option>
+                        <option value="mfl">Mordern foreign language</option>
+                        <option value="efs">Education for safety</option>
+                    </select>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="Enter Rating" id="primarySub3Rating">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="primaryPointSub3">0</div>
+                </div>
+            </div>
+            <div class="inputWrapper">
+                <div class="selection">
+                    <select name="" id="primarySub4">
+                        <option value="choose" disabled selected>Choose a subject</option>
+                        <option value="history">History</option>
+                        <option value="civics">Civics</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="physics">Physics</option>
+                        <option value="it">Information Technology</option>
+                        <option value="mfl">Mordern foreign language</option>
+                        <option value="efs">Education for safety</option>
+                    </select>
+                </div>
+                <div class="inputFeild">
+                    <input type="number" placeholder="Enter Rating" id="primarySub4Rating">
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="primaryPointSub4">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Primary school leaving certificate end -->
+    <!-- Certificate with distinction start -->
+    <section class="sec sec3">
+        <div class="wrapper">
+            <h1 class="title">
+                Certificate with distinction
+            </h1>
+            <hr>
+            <div class="inputWrapper inTittle">
+                <div></div>
+                <div>Points</div>
+            </div>
+            <div class="inputWrapper">
+                <div class="yesnoWrap">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="certificate" id="certificateYes" value="yes">
+                        <label class="form-check-label" for="certificateYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="certificate" id="certificateNo" value="no">
+                        <label class="form-check-label" for="certificateNo">No</label>
+                    </div>
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="certificatePoint">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certificate with distinction end -->
+    <!-- Volunteering start -->
+    <section class="sec sec4">
+        <div class="wrapper">
+            <h1 class="title">
+                Volunteering
+            </h1>
+            <hr>
+            <div class="inputWrapper inTittle">
+                <div></div>
+                <div>Points</div>
+            </div>
+            <div class="inputWrapper">
+                <div class="yesnoWrap">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="volunteering" id="volunteeringYes" value="yes">
+                        <label class="form-check-label" for="volunteeringYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="volunteering" id="volunteeringNo" value="no">
+                        <label class="form-check-label" for="volunteeringNo">No</label>
+                    </div>
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="volunteeringPoint">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Volunteering end -->
+    <!-- Contest start -->
+    <section class="sec sec5">
+        <div class="wrapper">
+            <h1 class="title">
+                Contests
+            </h1>
+            <hr>
+            <p class="conDescription">
+                Have you been awarded the title of a laureate or finalist of a competition (The list of competitions taken into account for scoring in a given school year should be checked with the competent school board for a given voivodship) at least at the poviat level?
+            </p>
+            <div class="inputWrapper inTittle">
+                <div></div>
+                <div>Points</div>
+            </div>
+            <div class="inputWrapper">
+                <div class="yesnoWrap">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contests" id="contestsYes" value="yes">
+                        <label class="form-check-label" for="contestsYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contests" id="contestsNo" value="no">
+                        <label class="form-check-label" for="contestsNo">No</label>
+                    </div>
+                </div>
+                <div class="inputPoints">
+                    <div class="point" id="contestsPoint">0</div>
+                </div>
+            </div>
+            <p class="note">
+                * The maximum number of points that can be obtained for all achievements is 18 points.
+            </p>
+            <div class="quizWrap" id="quizes">
+                <!-- Quiz 1 -->
+                <div class="quiz quiz1" id="quiz1">
+                    <div class="question">
+                        obtaining knowledge in competitions that are a supra-voivodship competition organized by superintendents of education on the basis of concluded agreements:
+                    </div>
+                    <div class="answerWrap">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q1" id="Q1A1">
+                            <label class="form-check-label" for="Q1A1">
+                                the title of the finalist of the subject competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q1" id="Q1A2">
+                            <label class="form-check-label" for="Q1A2">
+                                the title of laureate of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q1" id="Q1A3">
+                            <label class="form-check-label" for="Q1A3">
+                                the title of finalist of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- quiz 2 -->
+                <div class="quiz quiz2" id="quiz2">
+                    <div class="question">
+                        obtaining knowledge in competitions that are an international or nationwide competition or a nationwide tournament, carried out in accordance with the provisions issued on the basis of art. 32a sec. 4 and Art. 22 sec. 2 point 8 of the Act:
+                    </div>
+                    <div class="answerWrap">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q2" id="Q2A1">
+                            <label class="form-check-label" for="Q2A1">
+                                the title of a finalist of a competition in an artistic subject or subjects covered by the framework curriculum of an art school
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q2" id="Q2A2">
+                            <label class="form-check-label" for="Q2A2">
+                                the title of the winner of the tournament in an artistic subject or subjects not covered by the framework curriculum of an art school
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q2" id="Q2A3">
+                            <label class="form-check-label" for="Q2A3">
+                                the title of the finalist of the tournament in an artistic subject or subjects not included in the framework curriculum of an art school
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- quiz 3 -->
+                <div class="quiz quiz3" id="quiz3">
+                    <div class="question">
+                        obtaining knowledge in competitions that are a regional competition organized by the superintendent of education:
+                    </div>
+                    <div class="answerWrap">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q3" id="Q3A1">
+                            <label class="form-check-label" for="Q3A1">
+                                two or more titles of the finalist of the subject competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q3" id="Q3A2">
+                            <label class="form-check-label" for="Q3A2">
+                                two or more titles of laureate of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q3" id="Q3A3">
+                            <label class="form-check-label" for="Q3A3">
+                                two or more finalist titles in a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q3" id="Q3A4">
+                            <label class="form-check-label" for="Q3A4">
+                                the title of the finalist of the subject competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q3" id="Q3A5">
+                            <label class="form-check-label" for="Q3A5">
+                                the title of laureate of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q3" id="Q3A6">
+                            <label class="form-check-label" for="Q3A6">
+                                the title of finalist of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- quiz 4 -->
+                <div class="quiz quiz4" id="quiz4">
+                    <div class="question">
+                        obtaining knowledge in competitions that are a competition or tournament, with a supra-voivodship or voivodeship range, carried out in accordance with the provisions issued on the basis of art. 32a sec. 4 and Art. 22 sec. 2 point 8 of the Act:
+                    </div>
+                    <div class="answerWrap">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q4" id="Q4A1">
+                            <label class="form-check-label" for="Q4A1">
+                                two or more titles of the finalist of the subject competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q4" id="Q4A2">
+                            <label class="form-check-label" for="Q4A2">
+                                two or more titles of laureate of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q4" id="Q4A3">
+                            <label class="form-check-label" for="Q4A3">
+                                two or more finalist titles in a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q4" id="Q4A4">
+                            <label class="form-check-label" for="Q4A4">
+                                the title of the finalist of the subject competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q4" id="Q4A5">
+                            <label class="form-check-label" for="Q4A5">
+                                the title of laureate of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q4" id="Q4A6">
+                            <label class="form-check-label" for="Q4A6">
+                                the title of finalist of a thematic or interdisciplinary competition
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- quiz 5 -->
+                <div class="quiz quiz5" id="quiz5">
+                    <div class="question">
+                        obtaining a high place in knowledge competitions other than those listed in points 1-4, artistic or sports, organized by the education superintendent or other entities operating on the school premises, at the level of:
+                    </div>
+                    <div class="answerWrap">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q5" id="Q5A1">
+                            <label class="form-check-label" for="Q5A1">
+                                internationally
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q5" id="Q5A2">
+                            <label class="form-check-label" for="Q5A2">
+                                domestic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q5" id="Q5A3">
+                            <label class="form-check-label" for="Q5A3">
+                                provincial
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Q5" id="Q5A4">
+                            <label class="form-check-label" for="Q5A4">
+                                poviat
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contest end -->
+    <section class="resultSec">
+        <div class="leftPart">
+            <div class="resTitle">Total points earned</div>
+            <div class="resdes">Please complete all fields to get the full score</div>
+        </div>
+        <div class="rightPart">
+            <div class="totalPointes" id="result">0</div>
+        </div>
+    </section>
+    <!-- script start -->
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="script.js"></script>
+    <!-- script end -->
+</body>
+
+</html>
