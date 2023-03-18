@@ -31,6 +31,11 @@ let contestsNo = document.getElementById('contestsNo')
 let contestsPoint = document.getElementById('contestsPoint')
 let quizes = document.getElementById('quizes')
 let quiz1 = document.getElementById('quiz1')
+let Q1NO = document.getElementById('Q1NO')
+let Q2NO = document.getElementById('Q2NO')
+let Q3NO = document.getElementById('Q3NO')
+let Q4NO = document.getElementById('Q4NO')
+let Q5NO = document.getElementById('Q5NO')
 let Q1A1 = document.getElementById('Q1A1')
 let Q1A2 = document.getElementById('Q1A2')
 let Q1A3 = document.getElementById('Q1A3')
@@ -76,9 +81,14 @@ if (primarySub4.value == 'choose') {
 window.addEventListener('change', function() {
 
     // eightth grade polish start
+    EighthPointPolishInput.setAttribute('placeholder', 'Enter result %')
+    if (EighthPointPolishInput.value > 100) {
+        EighthPointPolishInput.value = 100
+    }
     EighthPointPolishInputValue = Math.round(Number(EighthPointPolishInput.value) * 0.35)
     EighthPointPolish.innerText = EighthPointPolishInputValue
     if (switch1.checked) {
+        EighthPointPolishInput.setAttribute('placeholder', 'Enter The rating')
         if (EighthPointPolishInput.value > 6) {
             EighthPointPolishInput.value = 6
         }
@@ -101,9 +111,14 @@ window.addEventListener('change', function() {
     // eightth grade polish end
 
     // eightth grade Mathematics start
+    EighthPointMathInput.setAttribute('placeholder', 'Enter result %')
+    if (EighthPointMathInput.value > 100) {
+        EighthPointMathInput.value = 100
+    }
     EighthPointMathInputValue = Math.round(Number(EighthPointMathInput.value) * 0.35)
     EighthPointMath.innerText = EighthPointMathInputValue
     if (switch2.checked) {
+    	EighthPointMathInput.setAttribute('placeholder', 'Enter The rating')
         if (EighthPointMathInput.value > 6) {
             EighthPointMathInput.value = 6
         }
@@ -126,9 +141,14 @@ window.addEventListener('change', function() {
     // eightth grade Mathematics end
 
     // eightth grade j. modern foreign start
+    EighthPointForeignInput.setAttribute('placeholder', 'Enter result %')
+    if (EighthPointForeignInput.value > 100) {
+        EighthPointForeignInput.value = 100
+    }
     EighthPointForeignInputValue = Math.round(Number(EighthPointForeignInput.value) * 0.30)
     EighthPointForeign.innerText = EighthPointForeignInputValue
     if (switch3.checked) {
+    	EighthPointForeignInput.setAttribute('placeholder', 'Enter The rating')
         if (EighthPointForeignInput.value > 6) {
             EighthPointForeignInput.value = 6
         }
@@ -203,6 +223,22 @@ window.addEventListener('change', function() {
     if (contestsYes.checked) {
         quizes.style.display = 'block'
     }
+    if (Q1NO.checked) {
+        a = 0
+    }
+    if (Q2NO.checked) {
+        b = 0
+    }
+    if (Q3NO.checked) {
+        c = 0
+    }
+    if (Q4NO.checked) {
+        d = 0
+    }
+    if (Q5NO.checked) {
+        e = 0
+    }
+
     if (Q1A1.checked) {
         a = 10
     }
@@ -270,7 +306,11 @@ window.addEventListener('change', function() {
         e = 1
     }
     cp = a + b + c + d + e
+    if (cp > 18) {
+        cp = 18
+    }
     contestsPoint.innerText = cp
+
 
     if (contestsNo.checked) {
         quizes.style.display = 'none'
@@ -301,6 +341,8 @@ function primaryInput(rating, point) {
         point.innerText = 0
     }
 }
+
+
 let p = [...document.querySelectorAll('.point')]
 
 setInterval(function() {
